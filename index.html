@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Survey about the Internet</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+		<link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+		<link href='https://fonts.googleapis.com/css?family=Raleway:300,100' rel='stylesheet' type='text/css'>
+
+		<script src="javascript/index.js"></script>
+
+	</head>
+
+	<body>
+
+
+		<!-- I used for this project elements of HTML5, CSS and JavaScript -->
+
+		<main>
+
+			<h1 id='title'>Survey about the Internet</h1>
+
+			<p class="the-p">Greetings, we would like to know a bit about the online activity of our population. Please give us 5 minutes to answer a few simple questions and maybe we'll make the web a better place.
+			</p> 
+
+			<hr> 
+
+				<br><br>
+
+
+			<form id="survey-form" method="post">
+				<fieldset>
+
+					<legend class="question">What is the activity that you spend the most time for on the web?</legend>
+
+					<br>
+
+					<input type="radio" name="fav-activity" id="socialising" value="socialising"> <label for='socialising'> Knowing new people and chatting with friends (social media, dating, etc);</label> <br>
+					<input type="radio" name="fav-activity" id="downloading" value="downloading"> <label for='downloading'> Downloading content;</label> <br>
+					<input type="radio" name="fav-activity" id="reading" value="reading"> <label for='reading'> Reading news and different articles </label> <br>
+					<input type="radio" name="fav-activity" id="likes" value="likes"> <label for='likes'>Giving likes and commenting on sexy photos of women/men; </label> <br>
+					<input type="radio" name="fav-activity" id="porn" value="porn"> <label for='porn'>Watching porn; </label> <br>
+
+					<input type="radio" name="fav-activity" id="other" value="other" onclick="otherFunction()"> <label for='other'>Other (please specify) </label> <br>
+
+					<textarea id="textarea-for-other" placeholder="Feel free to write anything..."></textarea>
+
+				</fieldset> <br><br>
+			</form>
+
+			<form class="survey-form" action="blabla.php">
+				<fieldset>
+
+					<legend class="question">From what devices did you access the web during the last week?</legend>
+
+					<br>
+
+					<input type="checkbox" name="pc" id="pc"> <label for="pc">PC</label> <br>
+					<input type="checkbox" name="laptop" id="laptop"> <label for="laptop">Laptop</label> <br>
+					<input type="checkbox" name="smartphone" id="smartphone"> <label for="smartphone">Smartphone</label> <br>
+					<input type="checkbox" name="tablete" id="tablete"> <label for="tablete">Tablete</label> <br>
+
+				</fieldset> <br><br>
+			</form>
+
+			<form class="survey-form" action="blabla.php" method="post" id="za-form">
+				<fieldset>
+
+					<legend class="question">How do you think we can make Social Media better?</legend>
+
+					<br>
+
+					<input type="radio" name="social-media-better" id="less-ads" value="less-ads"> <label for='less-ads'>Less ads</label> <br>
+					<input type="radio" name="social-media-better" id="more-bans" value="more-bans"> <label for='more-bans'> More censorship and bans</label> <br>
+					<input type="radio" name="social-media-better" id="less-bans" value="less-bans"> <label for='less-bans'> Less censorship and bans </label> <br>
+					<input type="radio" name="social-media-better" id="stop-idiots" value="stop-idiots"> <label for='stop-idiots'>Idiots should not be allowed to post</label> <br>
+					<input type="radio" name="social-media-better" id="fuck-zucks" value="fuck-zucks"> <label for='fuck-zucks'>Zuckerberg should go to Hell </label> <br>
+					<input type="radio" name="social-media-better" id="no-surveys" value="no-surveys"> <label for='no-surveys'>Less stupid surveys like this one</label> <br>
+
+					<input type="radio" name="social-media-better" id="social-media-better" value="social-media" onclick="funcSocialMedia()"> <label for='social-media-better'>Other (please specify) </label> <br>
+
+					<textarea id="textarea-for-social-media" placeholder="Feel free to write anything..."></textarea>
+
+				</fieldset> <br><br>
+			</form>
+
+			<form class="survey-form" action="blabla.php">
+				<fieldset>
+
+					<legend class="question">Please check the type of content that you downloaded online during the last month: </legend>
+
+					<br>
+
+					<input type="checkbox" name="games" id="games"> <label for="games">PC/console games</label> <br>
+					<input type="checkbox" name="music" id="music"> <label for="music">Music</label> <br>
+					<input type="checkbox" name="movies" id="movies"> <label for="movies">Movies</label> <br>
+					<input type="checkbox" name="tv-shows" id="tv-shows"> <label for="tv-shows">TV Shows</label> <br>
+					<input type="checkbox" name="stand-up" id="stand-up"> <label for="stand-up">Stand-up comedy</label> <br>
+					<input type="checkbox" name="porn" id="porn"> <label for="porn">Porn</label> <br>
+
+				</fieldset> <br><br>
+			</form>
+
+			<form id="survey-form" action="blabla.php">
+				<fieldset>
+					<legend class="question">What kind of products did you purchase most via the web during the last 3 months?</legend>
+
+					<br>
+
+					<input list="shopping" name="buy-online">
+
+					<datalist id="shopping">
+
+						<option value="Art">
+						<option value="Cars">
+						<option value="Clothes">
+						<option value="Collectibles">
+						<option value="Computer hardware">
+						<option value="Fashion">
+						<option value="Food/drinks">
+						<option value="Furniture">
+						<option value="Health and beauty">
+						<option value="Jewelry">
+						<option value="Motorcycles">
+						<option value="Pet supplies">
+						<option value="Sex toys">
+						<option value="Shoes">
+						<option value="Smartphones/tablets">
+						<option value="Team sports">
+						<option value="Toys">
+						<option value="Video games">
+						<option value="Yard, garden and outdoor">
+						
+					</datalist>
+
+				</fieldset> <br><br>
+
+			<p class="the-p">Now give us a few info about yourself so we can send your answers:</p>
+
+			<div class="personal-data-survey">
+				<fieldset>
+
+				Name/Nickname: <input type="text" id="name" name="myname" placeholder="Enter your name or nickname" class="the-input" required autocomplete> <br><br>
+
+
+				Age (years old): <input type="number" name="age" class="the-input" id="number" min='10' max="130" required> <br><br>
+
+				Gender: 
+				<select name="gender" class="the-input">
+				  <option value="male">Male</option>
+				  <option value="female">Female</option>
+				  <option value="shemale">Shemale</option>
+				  <option value="i dunno">I'm not sure / My dad says I'm kind of a pussy</option>
+				</select> <br>
+
+				<p class="the-p">Email:</p>
+
+				<input type="email" name="emailaddress" id="email" placeholder="Ex: horny.little.girl@yahoo.com" class="the-input" required autocomplete> <br><br>
+
+				<p class="the-p">Do you have any additional comments like suggestions, questions, kind words or cusses? If so, write below:</p>
+
+				<textarea rows="10" cols="60" placeholder="Give us all you got!"></textarea>
+				
+				</fieldset>
+			</div>
+
+			<br>
+
+
+			<div class="buttons">
+
+				<input type="submit" value="Send answers" class="send-button">
+				<input type="reset" value="Reset" class="reset-button">
+
+			</div>
+
+		</form>
+
+		</main>
+
+		<footer>
+			<p style="color:white; background-color:black;display:inline-block;">Written and coded by <a href="https://codepen.io/cristopher927/" class="name-link" target="_blank">Cristian Antonescu</a></p>
+		</footer>
+
+	</body>
+
+</html>
