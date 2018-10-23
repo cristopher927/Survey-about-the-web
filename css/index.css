@@ -117,7 +117,7 @@
 				font-size:35px;
 				animation-name: titleanimation;
 				animation-duration: 7s;
-				animation-iteration-count: 60;
+				animation-iteration-count: infinite;
 			}
 
 			@keyframes titleanimation {
